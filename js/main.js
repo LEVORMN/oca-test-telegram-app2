@@ -69,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.classList.toggle('nav__toggle--active');
         navList.classList.toggle('nav__list--active');
         navOverlay.classList.toggle('nav__overlay--active');
+        header.classList.toggle('header--menu-open', !isActive);
         
         // Prevent body scroll when menu is open
         document.body.style.overflow = isActive ? '' : 'hidden';
@@ -81,6 +82,7 @@ document.addEventListener('DOMContentLoaded', () => {
         navToggle.classList.remove('nav__toggle--active');
         navList.classList.remove('nav__list--active');
         navOverlay.classList.remove('nav__overlay--active');
+        header.classList.remove('header--menu-open');
         document.body.style.overflow = '';
         navToggle.setAttribute('aria-expanded', 'false');
     }
@@ -188,4 +190,41 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach(section => {
         sectionObserver.observe(section);
     });
+
+    // ============================================
+    // Magnetic Hover Effect for Navigation Links
+    // ============================================
+    if (window.matchMedia('(pointer: fine)').matches) {
+        navLinks.forEach(link => {
+            link.addEventListener('mousemove', (e) => {
+                const rect = link.getBoundingClientRect();
+                const x = e.clientX - rect.left - rect.width / 2;
+                const y = e.clientY - rect.top - rect.height / 2;
+                
+                link.style.transform = `translate(${x * 0.1}px, ${y * 0.1}px) translateY(-2px)`;
+            });
+            
+            link.addEventListener('mouseleave', () => {
+                link.style.transform = '';
+            });
+        });
+    }
+
+    // ============================================
+    // Logo Magnetic Effect
+    // ============================================
+    const logo = document.querySelector('.logo');
+    if (logo && window.matchMedia('(pointer: fine)').matches) {
+        logo.addEventListener('mousemove', (e) => {
+            const rect = logo.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            
+            logo.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px) scale(1.05)`;
+        });
+        
+        logo.addEventListener('mouseleave', () => {
+            logo.style.transform = '';
+        });
+    }
 });

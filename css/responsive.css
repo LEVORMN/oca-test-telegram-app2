@@ -16,6 +16,12 @@
         background: rgba(255, 255, 255, 0.98);
     }
     
+    /* Header when mobile menu is open */
+    .header--menu-open {
+        background: rgba(255, 255, 255, 0.95) !important;
+        backdrop-filter: blur(20px) !important;
+    }
+    
     /* Logo */
     .logo {
         font-size: 1.25rem;
@@ -51,6 +57,18 @@
     /* Active mobile menu */
     .nav__list--active {
         right: 0;
+        animation: slideInMenu 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    @keyframes slideInMenu {
+        from {
+            right: -100%;
+            opacity: 0.8;
+        }
+        to {
+            right: 0;
+            opacity: 1;
+        }
     }
     
     /* Mobile navigation items */
@@ -68,7 +86,31 @@
         align-items: center;
         gap: var(--spacing-sm);
         min-height: 56px; /* Minimum touch target size */
+        opacity: 0;
+        transform: translateX(30px);
+        transition: opacity 0.4s ease, transform 0.4s ease, background-color 0.3s ease, color 0.3s ease;
     }
+    
+    /* Show icons on mobile */
+    .nav__link__icon {
+        display: inline-flex;
+        font-size: 1.3rem;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+    
+    /* Staggered animation for mobile menu items */
+    .nav__list--active .nav__link {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .nav__list--active .nav__item:nth-child(1) .nav__link { transition-delay: 0.05s; }
+    .nav__list--active .nav__item:nth-child(2) .nav__link { transition-delay: 0.1s; }
+    .nav__list--active .nav__item:nth-child(3) .nav__link { transition-delay: 0.15s; }
+    .nav__list--active .nav__item:nth-child(4) .nav__link { transition-delay: 0.2s; }
+    .nav__list--active .nav__item:nth-child(5) .nav__link { transition-delay: 0.25s; }
+    .nav__list--active .nav__item:nth-child(6) .nav__link { transition-delay: 0.3s; }
+    .nav__list--active .nav__item:nth-child(7) .nav__link { transition-delay: 0.35s; }
     
     .nav__link::before {
         border-radius: var(--border-radius-card);
@@ -88,6 +130,16 @@
     
     .nav__link--active:hover {
         color: var(--color-white);
+    }
+    
+    /* Mobile link hover effect */
+    .nav__link:hover {
+        transform: translateX(5px);
+    }
+    
+    /* Add ripple effect for mobile */
+    .nav__link:active {
+        transform: scale(0.98);
     }
     
     /* Section adjustments */
