@@ -1,0 +1,211 @@
+/* ============================================
+   Responsive Styles
+   ============================================ */
+
+/* ============================================
+   Tablet & Mobile Styles
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .header {
+        height: var(--header-height-mobile);
+    }
+    
+    .header--scrolled {
+        background: rgba(255, 255, 255, 0.98);
+    }
+    
+    /* Logo */
+    .logo {
+        font-size: 1.25rem;
+    }
+    
+    /* Hamburger menu visible */
+    .nav__toggle {
+        display: flex;
+    }
+    
+    /* Mobile navigation list */
+    .nav__list {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        height: 100dvh; /* Dynamic viewport height for mobile */
+        background: rgba(255, 255, 255, 0.98);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        padding: calc(var(--header-height-mobile) + var(--spacing-lg)) var(--spacing-md) var(--spacing-md);
+        gap: var(--spacing-xs);
+        transition: var(--transition-smooth);
+        box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+        border-radius: 20px 0 0 20px;
+        z-index: var(--z-mobile-menu);
+        overflow-y: auto;
+    }
+    
+    /* Active mobile menu */
+    .nav__list--active {
+        right: 0;
+    }
+    
+    /* Mobile navigation items */
+    .nav__item {
+        width: 100%;
+    }
+    
+    /* Mobile navigation links */
+    .nav__link {
+        padding: 16px 20px;
+        font-size: 1.1rem;
+        background: rgba(102, 126, 234, 0.05);
+        border-radius: var(--border-radius-card);
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        min-height: 56px; /* Minimum touch target size */
+    }
+    
+    .nav__link::before {
+        border-radius: var(--border-radius-card);
+    }
+    
+    /* Hide active indicator on mobile */
+    .nav__link--active::after {
+        display: none;
+    }
+    
+    /* Mobile active state with different style */
+    .nav__link--active {
+        background: var(--gradient-primary);
+        color: var(--color-white);
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .nav__link--active:hover {
+        color: var(--color-white);
+    }
+    
+    /* Section adjustments */
+    .section__title {
+        font-size: 2rem;
+    }
+    
+    .section__subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Button adjustments */
+    .btn {
+        width: 100%;
+        padding: 14px 30px;
+    }
+    
+    /* Hero adjustments */
+    .hero__title {
+        font-size: 2rem;
+    }
+    
+    .hero__subtitle {
+        font-size: 1.1rem;
+    }
+    
+    /* Price adjustments */
+    .price {
+        font-size: 1.75rem;
+    }
+}
+
+/* ============================================
+   Small Mobile Devices
+   ============================================ */
+
+@media (max-width: 480px) {
+    :root {
+        --container-padding: 16px;
+    }
+    
+    .section__title {
+        font-size: 1.75rem;
+    }
+    
+    .nav__list {
+        width: 85%;
+        padding-top: calc(var(--header-height-mobile) + var(--spacing-md));
+    }
+    
+    .nav__link {
+        padding: 14px 16px;
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   Landscape Mode on Mobile
+   ============================================ */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .nav__list {
+        padding-top: calc(var(--header-height-mobile) + var(--spacing-sm));
+    }
+    
+    .nav__link {
+        padding: 10px 16px;
+    }
+}
+
+/* ============================================
+   Large Screens
+   ============================================ */
+
+@media (min-width: 1440px) {
+    :root {
+        --container-max-width: 1400px;
+    }
+    
+    .nav__link {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   Reduced Motion Preferences
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+    
+    .nav__list {
+        transition: none;
+    }
+}
+
+/* ============================================
+   High Contrast Mode
+   ============================================ */
+
+@media (prefers-contrast: high) {
+    .nav__link--active {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+    }
+    
+    .nav__toggle__span {
+        background: currentColor;
+    }
+}

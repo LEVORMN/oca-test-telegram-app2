@@ -1,0 +1,73 @@
+/* ============================================
+   CSS Variables - Design System
+   ============================================ */
+
+:root {
+    /* Colors */
+    --color-primary: #667eea;
+    --color-primary-dark: #764ba2;
+    --color-secondary: #f093fb;
+    --color-secondary-dark: #f5576c;
+    --color-text: #333;
+    --color-text-light: #666;
+    --color-white: #ffffff;
+    --color-bg: #f8f9fa;
+    
+    /* Header */
+    --header-height: 80px;
+    --header-height-mobile: 70px;
+    --header-bg-transparent: rgba(255, 255, 255, 0);
+    --header-bg-scrolled: rgba(255, 255, 255, 0.85);
+    --header-blur: blur(20px);
+    --header-backdrop: saturate(180%);
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    --gradient-hover: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
+    --gradient-text: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    --gradient-hamburger: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+    
+    /* Shadows */
+    --shadow-premium: 0 8px 32px rgba(31, 38, 135, 0.15);
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-nav-hover: 0 4px 15px rgba(240, 147, 251, 0.4);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease;
+    --transition-slow: all 0.5s ease;
+    
+    /* Border Radius */
+    --border-radius-premium: 16px;
+    --border-radius-card: 12px;
+    --border-radius-sm: 8px;
+    
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 16px;
+    --spacing-md: 24px;
+    --spacing-lg: 40px;
+    --spacing-xl: 60px;
+    
+    /* Container */
+    --container-max-width: 1200px;
+    --container-padding: 20px;
+    
+    /* Z-index */
+    --z-header: 1000;
+    --z-mobile-menu: 1001;
+    --z-overlay: 999;
+    --z-toggle: 1002;
+}
+
+/* Dark theme support (optional) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-text: #e0e0e0;
+        --color-text-light: #a0a0a0;
+        --color-bg: #1a1a2e;
+        --header-bg-transparent: rgba(26, 26, 46, 0);
+        --header-bg-scrolled: rgba(26, 26, 46, 0.85);
+        --shadow-premium: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+}

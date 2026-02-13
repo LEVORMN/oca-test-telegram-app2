@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ОгнеЗащита - профессиональные решения для пожарной безопасности">
+    <title>ОгнеЗащита - Пожарная безопасность</title>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="progress-bar"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <a href="#hero" class="logo">ОгнеЗащита</a>
+            
+            <nav class="nav" role="navigation" aria-label="Главное меню">
+                <ul class="nav__list" id="nav-menu" role="menubar">
+                    <li class="nav__item" role="none">
+                        <a href="#hero" class="nav__link nav__link--active" role="menuitem">Главная</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#problems" class="nav__link" role="menuitem">Проблемы</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#solution" class="nav__link" role="menuitem">Решение</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#services" class="nav__link" role="menuitem">Услуги</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#cases" class="nav__link" role="menuitem">Кейсы</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#pricing" class="nav__link" role="menuitem">Цены</a>
+                    </li>
+                    <li class="nav__item" role="none">
+                        <a href="#contacts" class="nav__link" role="menuitem">Контакты</a>
+                    </li>
+                </ul>
+                
+                <button class="nav__toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="nav__toggle__span"></span>
+                    <span class="nav__toggle__span"></span>
+                    <span class="nav__toggle__span"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Mobile Menu Overlay -->
+    <div class="nav__overlay" aria-hidden="true"></div>
+    
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" aria-labelledby="hero-title">
+            <div class="container">
+                <h1 id="hero-title" class="hero__title">Профессиональная пожарная безопасность</h1>
+                <p class="hero__subtitle">Комплексные решения для защиты вашего бизнеса и имущества</p>
+                <a href="#contacts" class="btn btn--primary">Получить консультацию</a>
+            </div>
+        </section>
+        
+        <!-- Problems Section -->
+        <section id="problems" aria-labelledby="problems-title">
+            <div class="container">
+                <h2 id="problems-title" class="section__title">Проблемы</h2>
+                <p class="section__subtitle">С какими вызовами сталкиваются наши клиенты</p>
+                <div class="grid grid--3">
+                    <article class="card">
+                        <h3>Сложная документация</h3>
+                        <p>Постоянно меняющиеся требования законодательства и сложность оформления документов</p>
+                    </article>
+                    <article class="card">
+                        <h3>Высокие штрафы</h3>
+                        <p>Значительные финансовые санкции за нарушения пожарной безопасности</p>
+                    </article>
+                    <article class="card">
+                        <h3>Риски бизнеса</h3>
+                        <p>Угроза жизни сотрудников и сохранности материальных активов</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Solution Section -->
+        <section id="solution" aria-labelledby="solution-title">
+            <div class="container">
+                <h2 id="solution-title" class="section__title">Наше решение</h2>
+                <p class="section__subtitle">Профессиональный подход к пожарной безопасности</p>
+                <div class="grid grid--2">
+                    <article class="card">
+                        <h3>Комплексный аудит</h3>
+                        <p>Полная проверка объекта с выявлением всех рисков и нарушений</p>
+                    </article>
+                    <article class="card">
+                        <h3>Разработка системы</h3>
+                        <p>Создание индивидуальной системы пожарной безопасности</p>
+                    </article>
+                    <article class="card">
+                        <h3>Оформление документов</h3>
+                        <p>Подготовка всей необходимой документации и согласование</p>
+                    </article>
+                    <article class="card">
+                        <h3>Поддержка 24/7</h3>
+                        <p>Постоянная консультационная поддержка и мониторинг</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Services Section -->
+        <section id="services" aria-labelledby="services-title">
+            <div class="container">
+                <h2 id="services-title" class="section__title">Услуги</h2>
+                <p class="section__subtitle">Полный спектр услуг по пожарной безопасности</p>
+                <div class="grid grid--3">
+                    <article class="card">
+                        <h3>Пожарный аудит</h3>
+                        <p>Проверка соответствия нормам и выявление рисков</p>
+                    </article>
+                    <article class="card">
+                        <h3>Проектирование</h3>
+                        <p>Разработка систем пожаротушения и оповещения</p>
+                    </article>
+                    <article class="card">
+                        <h3>Монтаж и обслуживание</h3>
+                        <p>Установка и регулярное техническое обслуживание систем</p>
+                    </article>
+                    <article class="card">
+                        <h3>Обучение персонала</h3>
+                        <p>Тренинги и инструктажи по пожарной безопасности</p>
+                    </article>
+                    <article class="card">
+                        <h3>Документация</h3>
+                        <p>Оформление деклараций, сертификатов и планов эвакуации</p>
+                    </article>
+                    <article class="card">
+                        <h3>Консалтинг</h3>
+                        <p>Профессиональные консультации по всем вопросам</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Cases Section -->
+        <section id="cases" aria-labelledby="cases-title">
+            <div class="container">
+                <h2 id="cases-title" class="section__title">Кейсы</h2>
+                <p class="section__subtitle">Примеры успешно реализованных проектов</p>
+                <div class="grid grid--2">
+                    <article class="card">
+                        <h3>Торговый центр "Галерея"</h3>
+                        <p>Полная модернизация системы пожарной безопасности площадью 50 000 м²</p>
+                    </article>
+                    <article class="card">
+                        <h3>Производственный комплекс</h3>
+                        <p>Внедрение автоматической системы пожаротушения на 12 объектах</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Pricing Section -->
+        <section id="pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <h2 id="pricing-title" class="section__title">Цены</h2>
+                <p class="section__subtitle">Прозрачное ценообразование без скрытых платежей</p>
+                <div class="grid grid--3">
+                    <article class="card">
+                        <h3>Базовый</h3>
+                        <p class="price">от 25 000 ₽</p>
+                        <ul>
+                            <li>Первичный аудит</li>
+                            <li>План эвакуации</li>
+                            <li>Базовая документация</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn--secondary">Заказать</a>
+                    </article>
+                    <article class="card">
+                        <h3>Стандарт</h3>
+                        <p class="price">от 75 000 ₽</p>
+                        <ul>
+                            <li>Полный аудит</li>
+                            <li>Проектирование</li>
+                            <li>Полный пакет документов</li>
+                            <li>Обучение персонала</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn--primary">Заказать</a>
+                    </article>
+                    <article class="card">
+                        <h3>Премиум</h3>
+                        <p class="price">от 150 000 ₽</p>
+                        <ul>
+                            <li>Всё из Стандарта</li>
+                            <li>Монтаж оборудования</li>
+                            <li>Обслуживание 1 год</li>
+                            <li>Поддержка 24/7</li>
+                        </ul>
+                        <a href="#contacts" class="btn btn--secondary">Заказать</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contacts Section -->
+        <section id="contacts" aria-labelledby="contacts-title">
+            <div class="container">
+                <h2 id="contacts-title" class="section__title">Контакты</h2>
+                <p class="section__subtitle">Свяжитесь с нами для бесплатной консультации</p>
+                <div class="grid grid--2">
+                    <article class="card">
+                        <h3>Контактная информация</h3>
+                        <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+                        <p><strong>Email:</strong> info@ognezashita.ru</p>
+                        <p><strong>Адрес:</strong> г. Москва, ул. Пожарная, 1</p>
+                        <p><strong>Режим работы:</strong> Пн-Пт 9:00-18:00</p>
+                    </article>
+                    <article class="card">
+                        <h3>Быстрая связь</h3>
+                        <form class="contact-form">
+                            <input type="text" placeholder="Ваше имя" required>
+                            <input type="tel" placeholder="Телефон" required>
+                            <textarea placeholder="Сообщение" rows="3"></textarea>
+                            <button type="submit" class="btn btn--primary">Отправить</button>
+                        </form>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ОгнеЗащита. Все права защищены.</p>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
