@@ -3,271 +3,513 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ОгнеЗащита - профессиональные решения для пожарной безопасности">
-    <title>ОгнеЗащита - Пожарная безопасность</title>
-    
-    <!-- Styles -->
+    <meta name="description" content="Огнезащитная обработка металлоконструкций в Москве и МО. Сертифицированные материалы, понятные сроки и гарантии на результат.">
+    <title>Огнезащита металлоконструкций — премиальные решения</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23f90000'/%3E%3Cpath d='M20 44V20h14c6 0 10 4 10 10s-4 10-10 10H20z' fill='white'/%3E%3C/svg%3E">
+
     <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
     <div class="progress-bar"></div>
-    
-    <!-- Header -->
+
     <header class="header">
         <div class="header__container">
-            <a href="#hero" class="logo">ОгнеЗащита</a>
-            
+            <a class="logo" href="#hero" aria-label="Перейти к началу">
+                <span>FG</span>
+                FireGuard Steel
+            </a>
+
             <nav class="nav" role="navigation" aria-label="Главное меню">
                 <ul class="nav__list" id="nav-menu" role="menubar">
-                    <li class="nav__item" role="none">
-                        <a href="#hero" class="nav__link nav__link--active" role="menuitem">
-                            <span class="nav__link__icon">🏠</span>
-                            <span class="nav__link__text">Главная</span>
-                        </a>
-                    </li>
-                    <li class="nav__item" role="none">
-                        <a href="#problems" class="nav__link" role="menuitem">
-                            <span class="nav__link__icon">⚠️</span>
-                            <span class="nav__link__text">Проблемы</span>
-                        </a>
-                    </li>
-                    <li class="nav__item" role="none">
-                        <a href="#solution" class="nav__link" role="menuitem">
-                            <span class="nav__link__icon">💡</span>
-                            <span class="nav__link__text">Решение</span>
-                        </a>
-                    </li>
-                    <li class="nav__item" role="none">
-                        <a href="#services" class="nav__link" role="menuitem">
-                            <span class="nav__link__icon">🛠️</span>
-                            <span class="nav__link__text">Услуги</span>
-                        </a>
-                    </li>
-                    <li class="nav__item" role="none">
-                        <a href="#cases" class="nav__link" role="menuitem">
-                            <span class="nav__link__icon">📋</span>
-                            <span class="nav__link__text">Кейсы</span>
-                        </a>
-                    </li>
-                    <li class="nav__item" role="none">
-                        <a href="#pricing" class="nav__link" role="menuitem">
-                            <span class="nav__link__icon">💰</span>
-                            <span class="nav__link__text">Цены</span>
-                        </a>
-                    </li>
-                    <li class="nav__item" role="none">
-                        <a href="#contacts" class="nav__link" role="menuitem">
-                            <span class="nav__link__icon">📞</span>
-                            <span class="nav__link__text">Контакты</span>
-                        </a>
-                    </li>
+                    <li role="none"><a class="nav__link nav__link--active" href="#hero" role="menuitem">Главная</a></li>
+                    <li role="none"><a class="nav__link" href="#problems" role="menuitem">Проблемы</a></li>
+                    <li role="none"><a class="nav__link" href="#solution" role="menuitem">Решение</a></li>
+                    <li role="none"><a class="nav__link" href="#services" role="menuitem">Услуги</a></li>
+                    <li role="none"><a class="nav__link" href="#advantages" role="menuitem">Преимущества</a></li>
+                    <li role="none"><a class="nav__link" href="#cases" role="menuitem">Кейсы</a></li>
+                    <li role="none"><a class="nav__link" href="#steps" role="menuitem">Этапы</a></li>
+                    <li role="none"><a class="nav__link" href="#pricing" role="menuitem">Цены</a></li>
+                    <li role="none"><a class="nav__link" href="#reviews" role="menuitem">Отзывы</a></li>
+                    <li role="none"><a class="nav__link" href="#faq" role="menuitem">FAQ</a></li>
+                    <li role="none"><a class="nav__link" href="#geography" role="menuitem">География</a></li>
+                    <li role="none"><a class="nav__link" href="#contacts" role="menuitem">Контакты</a></li>
                 </ul>
-                
-                <button class="nav__toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
-                    <span class="nav__toggle__span"></span>
-                    <span class="nav__toggle__span"></span>
+
+                <button class="nav__toggle" aria-label="Открыть меню">
                     <span class="nav__toggle__span"></span>
                 </button>
             </nav>
         </div>
     </header>
-    
-    <!-- Mobile Menu Overlay -->
+
     <div class="nav__overlay" aria-hidden="true"></div>
-    
-    <!-- Main Content -->
+
     <main>
-        <!-- Hero Section -->
-        <section id="hero" aria-labelledby="hero-title">
-            <div class="container">
-                <h1 id="hero-title" class="hero__title">Профессиональная пожарная безопасность</h1>
-                <p class="hero__subtitle">Комплексные решения для защиты вашего бизнеса и имущества</p>
-                <a href="#contacts" class="btn btn--primary">Получить консультацию</a>
+        <section id="hero" class="hero" aria-labelledby="hero-title">
+            <div class="container hero__grid">
+                <div>
+                    <span class="badge">Сертифицированная огнезащита металла</span>
+                    <h1 id="hero-title" class="hero__title">Огнезащитная обработка металлоконструкций, которой доверяют лидеры отрасли</h1>
+                    <p class="hero__subtitle">Закрываем требования МЧС, сохраняем несущую способность и берем на себя весь процесс от проектирования до сдачи объекта. Работаем по Москве и МО.</p>
+                    <div class="hero__cta">
+                        <a class="btn btn--primary" href="#contacts">Получить расчёт</a>
+                        <a class="btn btn--secondary" href="#cases">Смотреть кейсы</a>
+                    </div>
+                    <p class="hero__note">Гарантия на работы до 5 лет · Материалы с протоколами испытаний</p>
+                    <div class="hero__stats">
+                        <div class="stat">
+                            <div class="stat__value">12+</div>
+                            <div class="stat__label">лет опыта в огнезащите</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value">520 000 м²</div>
+                            <div class="stat__label">обработано конструкций</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat__value">48 ч</div>
+                            <div class="stat__label">на запуск работ</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__media">
+                    <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80" alt="Металлические конструкции промышленного здания" fetchpriority="high">
+                    <div class="hero__badge">
+                        <strong>Класс огнестойкости</strong>
+                        <span>R45 – R120</span>
+                    </div>
+                </div>
             </div>
         </section>
-        
-        <!-- Problems Section -->
-        <section id="problems" aria-labelledby="problems-title">
+
+        <section id="problems" class="problems" aria-labelledby="problems-title">
             <div class="container">
-                <h2 id="problems-title" class="section__title">Проблемы</h2>
-                <p class="section__subtitle">С какими вызовами сталкиваются наши клиенты</p>
+                <div class="section__intro">
+                    <h2 id="problems-title" class="section__title">Что беспокоит заказчиков</h2>
+                    <p class="section__subtitle">Боли, которые мешают запускать объекты вовремя и без рисков.</p>
+                </div>
                 <div class="grid grid--3">
                     <article class="card">
-                        <h3>Сложная документация</h3>
-                        <p>Постоянно меняющиеся требования законодательства и сложность оформления документов</p>
+                        <div class="card__icon"><img src="assets/icons/certificate.svg" alt="Документы" aria-hidden="true"></div>
+                        <h3>Проверки и штрафы</h3>
+                        <p>Любые несоответствия нормам приводят к задержкам при вводе и ощутимым финансовым потерям.</p>
                     </article>
                     <article class="card">
-                        <h3>Высокие штрафы</h3>
-                        <p>Значительные финансовые санкции за нарушения пожарной безопасности</p>
+                        <div class="card__icon"><img src="assets/icons/fire.svg" alt="Риск" aria-hidden="true"></div>
+                        <h3>Риск потери несущей способности</h3>
+                        <p>Без профессиональной огнезащиты металл теряет прочность уже в первые минуты пожара.</p>
                     </article>
                     <article class="card">
-                        <h3>Риски бизнеса</h3>
-                        <p>Угроза жизни сотрудников и сохранности материальных активов</p>
+                        <div class="card__icon"><img src="assets/icons/clock.svg" alt="Сроки" aria-hidden="true"></div>
+                        <h3>Сжатые сроки строительства</h3>
+                        <p>Сдвиг графика работ может сорвать запуск объекта и повлиять на репутацию.</p>
                     </article>
                 </div>
             </div>
         </section>
-        
-        <!-- Solution Section -->
-        <section id="solution" aria-labelledby="solution-title">
+
+        <section id="solution" class="solution" aria-labelledby="solution-title">
             <div class="container">
-                <h2 id="solution-title" class="section__title">Наше решение</h2>
-                <p class="section__subtitle">Профессиональный подход к пожарной безопасности</p>
+                <div class="section__intro">
+                    <h2 id="solution-title" class="section__title">Решение, которое закрывает все риски</h2>
+                    <p class="section__subtitle">Команда FireGuard Steel внедряет огнезащитные системы, соответствующие СП и ГОСТ.</p>
+                </div>
                 <div class="grid grid--2">
-                    <article class="card">
-                        <h3>Комплексный аудит</h3>
-                        <p>Полная проверка объекта с выявлением всех рисков и нарушений</p>
-                    </article>
-                    <article class="card">
-                        <h3>Разработка системы</h3>
-                        <p>Создание индивидуальной системы пожарной безопасности</p>
-                    </article>
-                    <article class="card">
-                        <h3>Оформление документов</h3>
-                        <p>Подготовка всей необходимой документации и согласование</p>
-                    </article>
-                    <article class="card">
-                        <h3>Поддержка 24/7</h3>
-                        <p>Постоянная консультационная поддержка и мониторинг</p>
-                    </article>
+                    <div class="card">
+                        <h3>Инженерная огнезащита под ваш объект</h3>
+                        <p>Подбираем материалы и технологию под класс огнестойкости, толщины металла и специфику эксплуатации.</p>
+                        <ul>
+                            <li>Расчёт необходимой толщины покрытия</li>
+                            <li>Согласование с проектировщиками и технадзором</li>
+                            <li>Контроль качества на каждом этапе</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>Огнезащитная обработка под ключ</h3>
+                        <p>Берём на себя подготовку поверхности, нанесение составов, протоколы и исполнительную документацию.</p>
+                        <ul>
+                            <li>Собственный парк оборудования и бригад</li>
+                            <li>Сопровождение в ходе проверок</li>
+                            <li>Гарантийное сопровождение</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <!-- Services Section -->
-        <section id="services" aria-labelledby="services-title">
+
+        <section id="services" class="services" aria-labelledby="services-title">
             <div class="container">
-                <h2 id="services-title" class="section__title">Услуги</h2>
-                <p class="section__subtitle">Полный спектр услуг по пожарной безопасности</p>
+                <div class="section__intro">
+                    <h2 id="services-title" class="section__title">Услуги по огнезащите</h2>
+                    <p class="section__subtitle">Закрываем весь цикл работ на промышленных и коммерческих объектах.</p>
+                </div>
                 <div class="grid grid--3">
                     <article class="card">
-                        <h3>Пожарный аудит</h3>
-                        <p>Проверка соответствия нормам и выявление рисков</p>
+                        <div class="card__icon"><img src="assets/icons/shield.svg" alt="Обработка" aria-hidden="true"></div>
+                        <h3>Тонкослойная огнезащита</h3>
+                        <p>Современные интумесцентные составы для классов R45–R90.</p>
                     </article>
                     <article class="card">
-                        <h3>Проектирование</h3>
-                        <p>Разработка систем пожаротушения и оповещения</p>
+                        <div class="card__icon"><img src="assets/icons/fire.svg" alt="Толстослойная" aria-hidden="true"></div>
+                        <h3>Толстослойные покрытия</h3>
+                        <p>Оптимальны для складов и производственных зданий с высокими требованиями.</p>
                     </article>
                     <article class="card">
-                        <h3>Монтаж и обслуживание</h3>
-                        <p>Установка и регулярное техническое обслуживание систем</p>
+                        <div class="card__icon"><img src="assets/icons/certificate.svg" alt="Документация" aria-hidden="true"></div>
+                        <h3>Документация и протоколы</h3>
+                        <p>Готовим полный пакет исполнительной документации под проверку.</p>
                     </article>
                     <article class="card">
-                        <h3>Обучение персонала</h3>
-                        <p>Тренинги и инструктажи по пожарной безопасности</p>
+                        <div class="card__icon"><img src="assets/icons/team.svg" alt="Бригады" aria-hidden="true"></div>
+                        <h3>Выездные бригады</h3>
+                        <p>От 3 до 8 команд на объекте, чтобы выдерживать сроки.</p>
                     </article>
                     <article class="card">
-                        <h3>Документация</h3>
-                        <p>Оформление деклараций, сертификатов и планов эвакуации</p>
+                        <div class="card__icon"><img src="assets/icons/clock.svg" alt="Сервис" aria-hidden="true"></div>
+                        <h3>Контроль качества</h3>
+                        <p>Замер толщины покрытия, фотоотчёты и чек-листы.</p>
                     </article>
                     <article class="card">
-                        <h3>Консалтинг</h3>
-                        <p>Профессиональные консультации по всем вопросам</p>
+                        <div class="card__icon"><img src="assets/icons/map.svg" alt="Логистика" aria-hidden="true"></div>
+                        <h3>Логистика материалов</h3>
+                        <p>Оперативно поставляем сертифицированные составы на объект.</p>
                     </article>
                 </div>
             </div>
         </section>
-        
-        <!-- Cases Section -->
-        <section id="cases" aria-labelledby="cases-title">
+
+        <section id="advantages" class="advantages" aria-labelledby="advantages-title">
             <div class="container">
-                <h2 id="cases-title" class="section__title">Кейсы</h2>
-                <p class="section__subtitle">Примеры успешно реализованных проектов</p>
-                <div class="grid grid--2">
-                    <article class="card">
-                        <h3>Торговый центр "Галерея"</h3>
-                        <p>Полная модернизация системы пожарной безопасности площадью 50 000 м²</p>
-                    </article>
-                    <article class="card">
-                        <h3>Производственный комплекс</h3>
-                        <p>Внедрение автоматической системы пожаротушения на 12 объектах</p>
-                    </article>
+                <div class="section__intro">
+                    <h2 id="advantages-title" class="section__title">Почему выбирают нас</h2>
+                    <p class="section__subtitle">8 причин работать с нашей командой и оставаться спокойными за результат.</p>
+                </div>
+                <div class="grid grid--4">
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/shield.svg" alt="" aria-hidden="true"></div>
+                        <h3>Сертифицированные материалы</h3>
+                        <p>Работаем только с проверенными производителями и протоколами.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/clock.svg" alt="" aria-hidden="true"></div>
+                        <h3>Сроки под контролем</h3>
+                        <p>Отдельный менеджер проекта и ежедневный контроль графика.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/team.svg" alt="" aria-hidden="true"></div>
+                        <h3>Инженеры в штате</h3>
+                        <p>Техническая команда сопровождает работу на всех этапах.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/certificate.svg" alt="" aria-hidden="true"></div>
+                        <h3>Прозрачная документация</h3>
+                        <p>Передаём заказчику полный пакет акта и отчетности.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/fire.svg" alt="" aria-hidden="true"></div>
+                        <h3>Высокая огнестойкость</h3>
+                        <p>Достигаем R120 на металле любой сложности.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/map.svg" alt="" aria-hidden="true"></div>
+                        <h3>Москва и область</h3>
+                        <p>Быстрый выезд на объект и снабжение материалов.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/shield.svg" alt="" aria-hidden="true"></div>
+                        <h3>Гарантия до 5 лет</h3>
+                        <p>Закрепляем результат в договоре и сопровождаем эксплуатацию.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card__icon"><img src="assets/icons/team.svg" alt="" aria-hidden="true"></div>
+                        <h3>Единое окно</h3>
+                        <p>Один подрядчик для проектирования, нанесения и сдачи.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <!-- Pricing Section -->
-        <section id="pricing" aria-labelledby="pricing-title">
+
+        <section id="cases" class="cases" aria-labelledby="cases-title">
             <div class="container">
-                <h2 id="pricing-title" class="section__title">Цены</h2>
-                <p class="section__subtitle">Прозрачное ценообразование без скрытых платежей</p>
+                <div class="section__intro">
+                    <h2 id="cases-title" class="section__title">Кейсы из практики</h2>
+                    <p class="section__subtitle">Три объекта с измеримыми результатами и понятными сроками.</p>
+                </div>
                 <div class="grid grid--3">
-                    <article class="card">
-                        <h3>Базовый</h3>
-                        <p class="price">от 25 000 ₽</p>
-                        <ul>
-                            <li>Первичный аудит</li>
-                            <li>План эвакуации</li>
-                            <li>Базовая документация</li>
-                        </ul>
-                        <a href="#contacts" class="btn btn--secondary">Заказать</a>
+                    <article class="card case-card">
+                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80" alt="Производственное здание" loading="lazy" decoding="async">
+                        <h3>Производственное здание</h3>
+                        <p>Огнезащита металлоконструкций на этапе реконструкции без остановки производства.</p>
+                        <div class="case-metrics">
+                            <span>1200 м²</span>
+                            <span>9 дней</span>
+                            <span>R90</span>
+                        </div>
                     </article>
-                    <article class="card">
-                        <h3>Стандарт</h3>
-                        <p class="price">от 75 000 ₽</p>
-                        <ul>
-                            <li>Полный аудит</li>
-                            <li>Проектирование</li>
-                            <li>Полный пакет документов</li>
-                            <li>Обучение персонала</li>
-                        </ul>
-                        <a href="#contacts" class="btn btn--primary">Заказать</a>
+                    <article class="card case-card">
+                        <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=800&q=80" alt="Складской комплекс" loading="lazy" decoding="async">
+                        <h3>Складской комплекс</h3>
+                        <p>Нанесение толстослойных покрытий для склада класса А.</p>
+                        <div class="case-metrics">
+                            <span>5000 м²</span>
+                            <span>18 дней</span>
+                            <span>R120</span>
+                        </div>
                     </article>
-                    <article class="card">
-                        <h3>Премиум</h3>
-                        <p class="price">от 150 000 ₽</p>
-                        <ul>
-                            <li>Всё из Стандарта</li>
-                            <li>Монтаж оборудования</li>
-                            <li>Обслуживание 1 год</li>
-                            <li>Поддержка 24/7</li>
-                        </ul>
-                        <a href="#contacts" class="btn btn--secondary">Заказать</a>
+                    <article class="card case-card">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" alt="Коммерческое здание" loading="lazy" decoding="async">
+                        <h3>Коммерческое здание</h3>
+                        <p>Согласование проектных решений и защита металлокаркаса торгового центра.</p>
+                        <div class="case-metrics">
+                            <span>2400 м²</span>
+                            <span>12 дней</span>
+                            <span>R60</span>
+                        </div>
                     </article>
                 </div>
             </div>
         </section>
-        
-        <!-- Contacts Section -->
-        <section id="contacts" aria-labelledby="contacts-title">
+
+        <section id="steps" class="steps" aria-labelledby="steps-title">
             <div class="container">
-                <h2 id="contacts-title" class="section__title">Контакты</h2>
-                <p class="section__subtitle">Свяжитесь с нами для бесплатной консультации</p>
+                <div class="section__intro">
+                    <h2 id="steps-title" class="section__title">Этапы работы</h2>
+                    <p class="section__subtitle">Прозрачный процесс от заявки до передачи исполнительной документации.</p>
+                </div>
+                <div class="timeline">
+                    <div class="timeline__item">
+                        <div class="timeline__index">1</div>
+                        <div>
+                            <h3>Заявка и выезд инженера</h3>
+                            <p>Получаем данные, назначаем выезд и фиксируем объём работ.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__index">2</div>
+                        <div>
+                            <h3>Расчёт и подбор материалов</h3>
+                            <p>Определяем необходимую толщину покрытия и подбираем состав.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__index">3</div>
+                        <div>
+                            <h3>Подготовка поверхности</h3>
+                            <p>Очистка, обезжиривание и контроль адгезии.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__index">4</div>
+                        <div>
+                            <h3>Нанесение огнезащиты</h3>
+                            <p>Работы выполняются под ежедневным контролем качества.</p>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__index">5</div>
+                        <div>
+                            <h3>Сдача и сопровождение</h3>
+                            <p>Передаём исполнительную документацию и остаёмся на связи.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing" aria-labelledby="pricing-title">
+            <div class="container">
+                <div class="section__intro">
+                    <h2 id="pricing-title" class="section__title">Ценообразование</h2>
+                    <p class="section__subtitle">Честные цены за квадратный метр с фиксированным объёмом работ.</p>
+                </div>
+                <div class="grid grid--3">
+                    <article class="card price-card">
+                        <span class="tag">Старт</span>
+                        <h3>Тонкослойная огнезащита</h3>
+                        <div class="price">от 650 ₽/м²</div>
+                        <p class="price__note">Оптимально для офисов и коммерческих объектов.</p>
+                        <ul>
+                            <li>Класс R45–R60</li>
+                            <li>Выезд инженера</li>
+                            <li>Исполнительная документация</li>
+                        </ul>
+                        <a class="btn btn--dark" href="#contacts">Заказать расчёт</a>
+                    </article>
+                    <article class="card price-card">
+                        <span class="tag">Популярно</span>
+                        <h3>Комплексная огнезащита</h3>
+                        <div class="price">от 980 ₽/м²</div>
+                        <p class="price__note">Включает подготовку металла и полный контроль качества.</p>
+                        <ul>
+                            <li>Класс R60–R90</li>
+                            <li>Контроль толщины покрытия</li>
+                            <li>Фотоотчёты</li>
+                        </ul>
+                        <a class="btn btn--primary" href="#contacts">Получить КП</a>
+                    </article>
+                    <article class="card price-card">
+                        <span class="tag">Премиум</span>
+                        <h3>Толстослойные системы</h3>
+                        <div class="price">от 1 400 ₽/м²</div>
+                        <p class="price__note">Для складов, логистики и промышленности.</p>
+                        <ul>
+                            <li>Класс R90–R120</li>
+                            <li>Сложные узлы и фермы</li>
+                            <li>Гарантия до 5 лет</li>
+                        </ul>
+                        <a class="btn btn--dark" href="#contacts">Обсудить проект</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews" aria-labelledby="reviews-title">
+            <div class="container">
+                <div class="section__intro">
+                    <h2 id="reviews-title" class="section__title">Отзывы клиентов</h2>
+                    <p class="section__subtitle">Заказчики ценят дисциплину, аккуратность и уверенность в результате.</p>
+                </div>
+                <div class="grid grid--3">
+                    <article class="card review">
+                        <p>«Команда взяла объект под ключ, все работы завершили раньше срока. Документы приняли с первого раза.»</p>
+                        <div class="review__author">Алексей Громов, технический директор</div>
+                    </article>
+                    <article class="card review">
+                        <p>«Быстро включились в работу, снабжение материалов чёткое, всегда на связи.»</p>
+                        <div class="review__author">Екатерина Петрова, девелопер</div>
+                    </article>
+                    <article class="card review">
+                        <p>«Отдельно отмечу контроль качества и дисциплину бригад. После сдачи спокойно прошли проверку.»</p>
+                        <div class="review__author">Илья Лебедев, главный инженер</div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section__intro">
+                    <h2 id="faq-title" class="section__title">FAQ</h2>
+                    <p class="section__subtitle">Ответы на самые частые вопросы заказчиков.</p>
+                </div>
+                <div class="faq">
+                    <details>
+                        <summary>Сколько времени занимает огнезащитная обработка?</summary>
+                        <p>Срок зависит от объёма. В среднем от 7 до 20 дней, после обследования мы фиксируем точный график.</p>
+                    </details>
+                    <details>
+                        <summary>Вы работаете по действующим СП и ГОСТ?</summary>
+                        <p>Да, мы подбираем материалы и технологию строго в рамках нормативов и предоставляем подтверждения.</p>
+                    </details>
+                    <details>
+                        <summary>Нужно ли останавливать производство?</summary>
+                        <p>Мы выстраиваем график так, чтобы минимально вмешиваться в процесс и можем работать в ночные смены.</p>
+                    </details>
+                    <details>
+                        <summary>Какие документы вы выдаёте после завершения?</summary>
+                        <p>Передаём акты, протоколы замеров, паспорта материалов и исполнительную документацию.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section id="geography" class="geography" aria-labelledby="geography-title">
+            <div class="container">
+                <div class="section__intro">
+                    <h2 id="geography-title" class="section__title">География работы</h2>
+                    <p class="section__subtitle">Оперативно выезжаем по Москве и Московской области.</p>
+                </div>
                 <div class="grid grid--2">
-                    <article class="card">
-                        <h3>Контактная информация</h3>
-                        <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
-                        <p><strong>Email:</strong> info@ognezashita.ru</p>
-                        <p><strong>Адрес:</strong> г. Москва, ул. Пожарная, 1</p>
-                        <p><strong>Режим работы:</strong> Пн-Пт 9:00-18:00</p>
-                    </article>
-                    <article class="card">
-                        <h3>Быстрая связь</h3>
-                        <form class="contact-form">
-                            <input type="text" placeholder="Ваше имя" required>
-                            <input type="tel" placeholder="Телефон" required>
-                            <textarea placeholder="Сообщение" rows="3"></textarea>
-                            <button type="submit" class="btn btn--primary">Отправить</button>
-                        </form>
-                    </article>
+                    <div class="card">
+                        <h3>Мы рядом с вашим объектом</h3>
+                        <p>Локальные склады материалов позволяют начинать работы в течение 48 часов после согласования.</p>
+                        <div class="case-metrics">
+                            <span>Москва</span>
+                            <span>Химки</span>
+                            <span>Домодедово</span>
+                            <span>Мытищи</span>
+                            <span>Одинцово</span>
+                        </div>
+                    </div>
+                    <div class="geo-map">
+                        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80" alt="Москва и область" loading="lazy" decoding="async">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts" aria-labelledby="contacts-title">
+            <div class="container">
+                <div class="section__intro">
+                    <h2 id="contacts-title" class="section__title">Свяжитесь с нами</h2>
+                    <p class="section__subtitle">Оставьте заявку — инженер свяжется и подготовит точный расчёт.</p>
+                </div>
+                <div class="grid grid--2">
+                    <div class="contact-info">
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">📍</div>
+                            <div>
+                                <h3>Адрес</h3>
+                                <p>Москва, Ленинградский проспект, 35</p>
+                            </div>
+                        </div>
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">📞</div>
+                            <div>
+                                <h3>Телефон</h3>
+                                <p>+7 (495) 000-00-00</p>
+                            </div>
+                        </div>
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">✉️</div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@fireguard-steel.ru</p>
+                            </div>
+                        </div>
+                        <div class="contact-info__item">
+                            <div class="contact-info__icon">🕘</div>
+                            <div>
+                                <h3>График</h3>
+                                <p>Пн–Сб, 09:00–19:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="card form" aria-label="Форма заявки">
+                        <label>
+                            Имя
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </label>
+                        <label>
+                            Телефон
+                            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </label>
+                        <label>
+                            Комментарий
+                            <textarea name="comment" rows="4" placeholder="Опишите объект и сроки"></textarea>
+                        </label>
+                        <button class="btn btn--primary" type="submit">Отправить заявку</button>
+                        <p class="price__note">Нажимая кнопку, вы соглашаетесь с обработкой персональных данных.</p>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
-    
-    <!-- Footer -->
+
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 ОгнеЗащита. Все права защищены.</p>
+            <p>© 2024 FireGuard Steel. Огнезащита металлоконструкций в Москве и МО.</p>
         </div>
     </footer>
-    
-    <!-- Scripts -->
+
     <script src="js/main.js"></script>
 </body>
 </html>

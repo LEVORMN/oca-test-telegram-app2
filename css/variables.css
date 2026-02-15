@@ -1,74 +1,60 @@
-/* ============================================
-   CSS Variables - Design System
-   ============================================ */
-
 :root {
-    /* Colors */
-    --color-primary: #667eea;
-    --color-primary-dark: #764ba2;
-    --color-secondary: #f093fb;
-    --color-secondary-dark: #f5576c;
-    --color-text: #333;
-    --color-text-light: #666;
+    --color-primary: #f90000;
+    --color-primary-dark: #b30000;
+    --color-secondary: #111827;
+    --color-secondary-light: #1f2937;
+    --color-text: #101828;
+    --color-text-light: #475467;
     --color-white: #ffffff;
-    --color-bg: #f8f9fa;
-    
-    /* Header */
-    --header-height: 80px;
-    --header-height-mobile: 70px;
-    --header-bg-transparent: rgba(255, 255, 255, 0);
-    --header-bg-scrolled: rgba(255, 255, 255, 0.85);
-    --header-blur: blur(20px);
-    --header-backdrop: saturate(180%);
-    
-    /* Gradients */
-    --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    --gradient-hover: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-secondary-dark) 100%);
-    --gradient-text: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    --gradient-hamburger: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-    
-    /* Shadows */
-    --shadow-premium: 0 8px 32px rgba(31, 38, 135, 0.15);
-    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.08);
-    --shadow-nav-hover: 0 4px 15px rgba(240, 147, 251, 0.4);
-    
-    /* Transitions */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-fast: all 0.15s ease;
-    --transition-slow: all 0.5s ease;
-    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    
-    /* Border Radius */
-    --border-radius-premium: 16px;
-    --border-radius-card: 12px;
-    --border-radius-sm: 8px;
-    
-    /* Spacing */
+    --color-bg: #f8fafc;
+    --color-border: rgba(148, 163, 184, 0.3);
+
+    --gradient-primary: linear-gradient(135deg, #f90000 0%, #ff5f5f 100%);
+    --gradient-dark: linear-gradient(135deg, #0f172a 0%, #1f2937 100%);
+    --gradient-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+    --gradient-hover: linear-gradient(135deg, rgba(249, 0, 0, 0.15) 0%, rgba(255, 95, 95, 0.15) 100%);
+    --gradient-text: linear-gradient(135deg, #f90000 0%, #ff7a7a 100%);
+
+    --shadow-premium: 0 25px 50px rgba(15, 23, 42, 0.15);
+    --shadow-card: 0 15px 35px rgba(15, 23, 42, 0.12);
+    --shadow-soft: 0 10px 25px rgba(15, 23, 42, 0.08);
+
+    --transition-smooth: all 0.3s ease;
+    --transition-fast: all 0.2s ease;
+
+    --border-radius-lg: 24px;
+    --border-radius-md: 18px;
+    --border-radius-sm: 12px;
+
     --spacing-xs: 8px;
     --spacing-sm: 16px;
     --spacing-md: 24px;
     --spacing-lg: 40px;
-    --spacing-xl: 60px;
-    
-    /* Container */
+    --spacing-xl: 64px;
+
     --container-max-width: 1200px;
     --container-padding: 20px;
-    
-    /* Z-index */
+
+    --header-height: 84px;
+    --header-height-mobile: 72px;
+    --header-bg-transparent: rgba(255, 255, 255, 0.4);
+    --header-bg-scrolled: rgba(15, 23, 42, 0.9);
+    --header-blur: blur(20px);
+
+    --font-primary: 'Inter', sans-serif;
+    --font-accent: 'Manrope', sans-serif;
+
     --z-header: 1000;
-    --z-mobile-menu: 1001;
-    --z-overlay: 999;
-    --z-toggle: 1002;
+    --z-overlay: 900;
+    --z-toggle: 1100;
 }
 
-/* Dark theme support (optional) */
 @media (prefers-color-scheme: dark) {
     :root {
-        --color-text: #e0e0e0;
-        --color-text-light: #a0a0a0;
-        --color-bg: #1a1a2e;
-        --header-bg-transparent: rgba(26, 26, 46, 0);
-        --header-bg-scrolled: rgba(26, 26, 46, 0.85);
-        --shadow-premium: 0 8px 32px rgba(0, 0, 0, 0.3);
+        --color-bg: #0b0f1a;
+        --color-text: #f8fafc;
+        --color-text-light: #cbd5f5;
+        --header-bg-transparent: rgba(15, 23, 42, 0.5);
+        --header-bg-scrolled: rgba(15, 23, 42, 0.95);
     }
 }
