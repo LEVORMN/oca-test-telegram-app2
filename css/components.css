@@ -71,6 +71,58 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+/* ============================================
+   Header Contacts (Phone & CTA)
+   ============================================ */
+
+.header__contacts {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+    margin-left: auto;
+    margin-right: var(--spacing-md);
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-phone);
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: var(--transition-smooth);
+    white-space: nowrap;
+}
+
+.header__phone:hover {
+    color: var(--color-phone-hover);
+    transform: scale(1.05);
+}
+
+.header__phone__icon {
+    font-size: 1.2rem;
+}
+
+.header__phone__number {
+    letter-spacing: 0.5px;
+}
+
+/* CTA Button */
+.btn--cta {
+    background: var(--color-cta);
+    color: var(--color-white);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.btn--cta:hover {
+    background: var(--color-cta-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.5);
 }
 
 /* Logo */
@@ -353,6 +405,62 @@
     box-shadow: var(--shadow-premium);
 }
 
+/* Case Cards with Images */
+.card--case {
+    padding: 0;
+    overflow: hidden;
+}
+
+.card__image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.card--case:hover .card__image img {
+    transform: scale(1.05);
+}
+
+.card__content {
+    padding: var(--spacing-md);
+}
+
+.card__badge {
+    display: inline-block;
+    padding: 4px 12px;
+    background: var(--gradient-primary);
+    color: var(--color-white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Card with Icon */
+.card--icon {
+    text-align: center;
+}
+
+.card__icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+    display: inline-block;
+    transition: var(--transition-smooth);
+}
+
+.card--icon:hover .card__icon {
+    transform: scale(1.1) rotate(-5deg);
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -403,6 +511,11 @@
 /* ============================================
    Hero Section
    ============================================ */
+
+.hero__content {
+    position: relative;
+    z-index: 1;
+}
 
 .hero__title {
     font-size: 3rem;

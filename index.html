@@ -22,6 +22,14 @@
         <div class="header__container">
             <a href="#hero" class="logo">ОгнеЗащита</a>
             
+            <div class="header__contacts">
+                <a href="tel:+74951234567" class="header__phone">
+                    <span class="header__phone__icon">📞</span>
+                    <span class="header__phone__number">+7 (495) 123-45-67</span>
+                </a>
+                <a href="#contacts" class="btn btn--cta">Получить расчёт</a>
+            </div>
+            
             <nav class="nav" role="navigation" aria-label="Главное меню">
                 <ul class="nav__list" id="nav-menu" role="menubar">
                     <li class="nav__item" role="none">
@@ -66,6 +74,16 @@
                             <span class="nav__link__text">Контакты</span>
                         </a>
                     </li>
+                    <!-- Mobile-only phone and CTA -->
+                    <li class="nav__item nav__item--mobile-only" role="none">
+                        <a href="tel:+74951234567" class="nav__phone">
+                            <span class="nav__phone__icon">📞</span>
+                            <span class="nav__phone__number">+7 (495) 123-45-67</span>
+                        </a>
+                    </li>
+                    <li class="nav__item nav__item--mobile-only" role="none">
+                        <a href="#contacts" class="btn btn--cta btn--mobile">Получить расчёт</a>
+                    </li>
                 </ul>
                 
                 <button class="nav__toggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-menu">
@@ -85,9 +103,11 @@
         <!-- Hero Section -->
         <section id="hero" aria-labelledby="hero-title">
             <div class="container">
-                <h1 id="hero-title" class="hero__title">Профессиональная пожарная безопасность</h1>
-                <p class="hero__subtitle">Комплексные решения для защиты вашего бизнеса и имущества</p>
-                <a href="#contacts" class="btn btn--primary">Получить консультацию</a>
+                <div class="hero__content">
+                    <h1 id="hero-title" class="hero__title">Профессиональная пожарная безопасность</h1>
+                    <p class="hero__subtitle">Комплексные решения для защиты вашего бизнеса и имущества</p>
+                    <a href="#contacts" class="btn btn--primary">Получить консультацию</a>
+                </div>
             </div>
         </section>
         
@@ -97,15 +117,18 @@
                 <h2 id="problems-title" class="section__title">Проблемы</h2>
                 <p class="section__subtitle">С какими вызовами сталкиваются наши клиенты</p>
                 <div class="grid grid--3">
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">📋</div>
                         <h3>Сложная документация</h3>
                         <p>Постоянно меняющиеся требования законодательства и сложность оформления документов</p>
                     </article>
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">💰</div>
                         <h3>Высокие штрафы</h3>
                         <p>Значительные финансовые санкции за нарушения пожарной безопасности</p>
                     </article>
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">⚠️</div>
                         <h3>Риски бизнеса</h3>
                         <p>Угроза жизни сотрудников и сохранности материальных активов</p>
                     </article>
@@ -145,27 +168,33 @@
                 <h2 id="services-title" class="section__title">Услуги</h2>
                 <p class="section__subtitle">Полный спектр услуг по пожарной безопасности</p>
                 <div class="grid grid--3">
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">🔍</div>
                         <h3>Пожарный аудит</h3>
                         <p>Проверка соответствия нормам и выявление рисков</p>
                     </article>
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">📐</div>
                         <h3>Проектирование</h3>
                         <p>Разработка систем пожаротушения и оповещения</p>
                     </article>
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">🔧</div>
                         <h3>Монтаж и обслуживание</h3>
                         <p>Установка и регулярное техническое обслуживание систем</p>
                     </article>
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">👨‍🎓</div>
                         <h3>Обучение персонала</h3>
                         <p>Тренинги и инструктажи по пожарной безопасности</p>
                     </article>
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">📄</div>
                         <h3>Документация</h3>
                         <p>Оформление деклараций, сертификатов и планов эвакуации</p>
                     </article>
-                    <article class="card">
+                    <article class="card card--icon">
+                        <div class="card__icon">💼</div>
                         <h3>Консалтинг</h3>
                         <p>Профессиональные консультации по всем вопросам</p>
                     </article>
@@ -179,13 +208,25 @@
                 <h2 id="cases-title" class="section__title">Кейсы</h2>
                 <p class="section__subtitle">Примеры успешно реализованных проектов</p>
                 <div class="grid grid--2">
-                    <article class="card">
-                        <h3>Торговый центр "Галерея"</h3>
-                        <p>Полная модернизация системы пожарной безопасности площадью 50 000 м²</p>
+                    <article class="card card--case">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80" alt="Торговый центр Галерея" loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <h3>Торговый центр "Галерея"</h3>
+                            <p>Полная модернизация системы пожарной безопасности площадью 50 000 м²</p>
+                            <span class="card__badge">Модернизация</span>
+                        </div>
                     </article>
-                    <article class="card">
-                        <h3>Производственный комплекс</h3>
-                        <p>Внедрение автоматической системы пожаротушения на 12 объектах</p>
+                    <article class="card card--case">
+                        <div class="card__image">
+                            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&q=80" alt="Производственный комплекс" loading="lazy">
+                        </div>
+                        <div class="card__content">
+                            <h3>Производственный комплекс</h3>
+                            <p>Внедрение автоматической системы пожаротушения на 12 объектах</p>
+                            <span class="card__badge">Автоматизация</span>
+                        </div>
                     </article>
                 </div>
             </div>

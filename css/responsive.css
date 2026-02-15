@@ -3,6 +3,30 @@
    ============================================ */
 
 /* ============================================
+   Tablet Styles (medium screens)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    /* Adjust header for tablet */
+    .header__contacts {
+        gap: var(--spacing-sm);
+    }
+    
+    .header__phone {
+        font-size: 0.95rem;
+    }
+    
+    .header__phone__number {
+        display: none; /* Hide phone number text, keep icon */
+    }
+    
+    .btn--cta {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+/* ============================================
    Tablet & Mobile Styles
    ============================================ */
 
@@ -25,6 +49,11 @@
     /* Logo */
     .logo {
         font-size: 1.25rem;
+    }
+    
+    /* Hide header contacts on mobile */
+    .header__contacts {
+        display: none;
     }
     
     /* Hamburger menu visible */
@@ -111,6 +140,43 @@
     .nav__list--active .nav__item:nth-child(5) .nav__link { transition-delay: 0.25s; }
     .nav__list--active .nav__item:nth-child(6) .nav__link { transition-delay: 0.3s; }
     .nav__list--active .nav__item:nth-child(7) .nav__link { transition-delay: 0.35s; }
+    .nav__list--active .nav__item:nth-child(8) .nav__link { transition-delay: 0.4s; }
+    .nav__list--active .nav__item:nth-child(9) .nav__link { transition-delay: 0.45s; }
+    
+    /* Mobile-only items (phone and CTA) */
+    .nav__item--mobile-only {
+        margin-top: var(--spacing-sm);
+        border-top: 1px solid rgba(102, 126, 234, 0.1);
+        padding-top: var(--spacing-sm);
+    }
+    
+    .nav__phone {
+        display: flex;
+        align-items: center;
+        gap: var(--spacing-sm);
+        padding: 16px 20px;
+        background: rgba(220, 38, 38, 0.05);
+        border-radius: var(--border-radius-card);
+        color: var(--color-phone);
+        font-weight: 700;
+        font-size: 1.1rem;
+        min-height: 56px;
+        transition: var(--transition-smooth);
+    }
+    
+    .nav__phone:hover {
+        background: rgba(220, 38, 38, 0.1);
+        transform: translateX(5px);
+    }
+    
+    .nav__phone__icon {
+        font-size: 1.3rem;
+    }
+    
+    .btn--mobile {
+        width: 100%;
+        margin-top: var(--spacing-xs);
+    }
     
     .nav__link::before {
         border-radius: var(--border-radius-card);
@@ -164,6 +230,20 @@
     
     .hero__subtitle {
         font-size: 1.1rem;
+    }
+    
+    /* Hero background - disable fixed on mobile */
+    #hero {
+        background-attachment: scroll;
+    }
+    
+    /* Card adjustments */
+    .card__image {
+        height: 160px;
+    }
+    
+    .card__icon {
+        font-size: 2.5rem;
     }
     
     /* Price adjustments */
